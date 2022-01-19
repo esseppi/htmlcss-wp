@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
 }
 
 #container {
@@ -27,6 +27,7 @@ ul li{
     display: inline;
     font-style: normal;
     color: black;
+    font-size: larger;
 }
 
 a {
@@ -69,7 +70,7 @@ section:not(div*){
 
 }
 
-h2{
+#banner h2{
     text-overflow: ellipsis;
     font-size: small;
     overflow: hidden;
@@ -108,29 +109,35 @@ article{
     float: left;
 }
 .side{
-    width: calc(25% - 1em);
+    width: calc(20% - 1em);
     margin: 1em 0 1em 0;
 }
 
 .center {
     margin: 1em 1em;
-    width: 50%;  
+    width: 60%;  
 }
 
-.side img{
+.side img, .center img{
     object-fit: cover;
     filter: brightness(80%);
     width: 100%;
     border-radius: 25px;
-    height: 150px;
+    height: 200px;
+    margin: 0 0 1em 0;
     
+}
+article > h1 {
+    color: black;
+    font-weight: 200;
 }
 
-.center img{
-    object-fit: cover;
-    filter: brightness(80%);
-    width: 100%;
-    border-radius: 25px;
-    height: 150px;
-    
+h1+p{
+    color: darkgray;
 }
+
+article > p {
+    margin: 1em 0;
+    color: darkgray;
+}
+
