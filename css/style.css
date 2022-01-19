@@ -47,7 +47,7 @@ section:not(div*){
     filter: brightness(80);
 }
 
-section {
+#banner {
 
     position: relative;
     margin: 1em;
@@ -55,11 +55,11 @@ section {
     background-size: 97%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 550px;
+    max-height: 550px;
     width: auto;
 }
 
-img{
+#banner img{
     border-radius: 20px;
     filter: brightness(80%);
     width: 100%;
@@ -67,16 +67,6 @@ img{
     object-fit: cover;
     object-position: center;
 
-}
-
-section div {
-    color: #fff;
-    width: 50%;
-    margin: 1em;
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-    float: none;
 }
 
 h2{
@@ -87,5 +77,60 @@ h2{
     height: 40px;
 }
 
+#banner div {
+    color: #fff;
+    width: 40%;
+    margin: 1em;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    float: none;
+}
 
+main {
+    margin: 1em;
+    padding: 1em;
+}
+main header {
+    margin: 1em 0;
+}
+#articles {
+    padding: -1em;
+}
 
+#articles::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+article{
+    float: left;
+}
+.side{
+    width: calc(25% - 1em);
+    margin: 1em 0 1em 0;
+}
+
+.center {
+    margin: 1em 1em;
+    width: 50%;  
+}
+
+.side img{
+    object-fit: cover;
+    filter: brightness(80%);
+    width: 100%;
+    border-radius: 25px;
+    height: 150px;
+    
+}
+
+.center img{
+    object-fit: cover;
+    filter: brightness(80%);
+    width: 100%;
+    border-radius: 25px;
+    height: 150px;
+    
+}
